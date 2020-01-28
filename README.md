@@ -1,3 +1,45 @@
+https://webassembly.org/getting-started/developers-guide/
+
+1. Downloading the Toolchain
+A precompiled toolchain to compile C/C++ to WebAssembly is easily obtained via GitHub.
+
+emsdk.bat is Py API Calls packaged in batch file!!
+
+$ git clone https://github.com/emscripten-core/emsdk.git <enter>
+$ cd emsdk <enter>
+$ emsdk_var.bat <enter>
+$ emsdk install latest <enter>
+$ emsdk activate latest <enter>
+
+2. Compile and run a simple C program
+
+$ mkdir hello
+$ cd hello
+$ cat << EOF > hello.c
+#include <stdio.h>
+int main(int argc, char ** argv) {
+  printf("Hello, world!\n");
+}
+EOF
+$ emcc hello.c -o hello.html <enter>     // hello.html generated, 
+                                         // will run hello program in the browser
+
+3. [Serve the compiled files hello.js, jello.html, and hello.wasm over HTTP], use the emrun web server provided with the Emscripten SDK:
+
+$ emrun --no_browser --port 8080 . <enter>  // run http server emrun
+
+in the browser's address bar, punch in:
+http://localhost:8080/hello.html            // open program hello.[js,html,wasm] in the browser, while the emrun web server is running
+
+Developer's Guide https://webassembly.org/getting-started/developers-guide/
+JS API https://webassembly.org/getting-started/js-api/
+Advanced Tools https://webassembly.org/getting-started/advanced-tools/
+WebAssembly on MDN (Mozilla Dev Netwk) https://developer.mozilla.org/en-US/docs/WebAssembly
+
+https://emscripten.org/
+
+=> Hello, world! outputs in the browser, page powered by emscripten
+
 Emscripten SDK
 ==============
 

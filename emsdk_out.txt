@@ -1,0 +1,40 @@
+C:\SRC\React\WebAssembly\emsdk>
+C:\SRC\React\WebAssembly\emsdk>
+C:\SRC\React\WebAssembly\emsdk>emsdk activate latest
+
+Writing .emscripten configuration file to user home directory C:\Users\nik/
+The Emscripten configuration file C:\Users\nik\.emscripten has been rewritten with the following contents:
+
+NODE_JS = 'C:/SRC/React/WebAssembly/emsdk/node/12.9.1_64bit/bin/node.exe'
+PYTHON = 'C:/SRC/React/WebAssembly/emsdk/python/2.7.13.1_64bit/python-2.7.13.amd64/python.exe'
+JAVA = 'C:/SRC/React/WebAssembly/emsdk/java/8.152_64bit/bin/java.exe'
+LLVM_ROOT = 'C:/SRC/React/WebAssembly/emsdk/upstream/bin'
+BINARYEN_ROOT = 'C:/SRC/React/WebAssembly/emsdk/upstream'
+EMSCRIPTEN_ROOT = 'C:/SRC/React/WebAssembly/emsdk/upstream/emscripten'
+TEMP_DIR = 'c:/users/public/documents/wondershare/creatortemp'
+COMPILER_ENGINE = NODE_JS
+JS_ENGINES = [NODE_JS]
+
+Adding directories to PATH:
+PATH += C:\SRC\React\WebAssembly\emsdk
+PATH += C:\SRC\React\WebAssembly\emsdk\node\12.9.1_64bit\bin
+PATH += C:\SRC\React\WebAssembly\emsdk\python\2.7.13.1_64bit\python-2.7.13.amd64
+PATH += C:\SRC\React\WebAssembly\emsdk\java\8.152_64bit\bin
+PATH += C:\SRC\React\WebAssembly\emsdk\upstream\emscripten
+
+Setting environment variables:
+EMSDK = C:/SRC/React/WebAssembly/emsdk
+EMSDK_NODE = C:\SRC\React\WebAssembly\emsdk\node\12.9.1_64bit\bin\node.exe
+EMSDK_PYTHON = C:\SRC\React\WebAssembly\emsdk\python\2.7.13.1_64bit\python-2.7.13.amd64\python.exe
+JAVA_HOME = C:\SRC\React\WebAssembly\emsdk\java\8.152_64bit
+
+
+Set the following tools as active:
+   node-12.9.1-64bit
+   python-2.7.13.1-64bit
+   java-8.152-64bit
+   releases-upstream-967836071d96d9b7894e492382f5fcb96423fc07-64bit
+
+The changes made to environment variables only apply to the currently running shell instance. Use the 'emsdk_env.bat' to re-enter this environment later, or if you'd
+ like to permanently register this environment globally to all users in Windows Registry, rerun this command with the option --global.
+
